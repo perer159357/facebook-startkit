@@ -52,8 +52,7 @@ Parse.initialize("RjIuk4noTJ5csHFgIpu5iUXowZXDDnF9oNmacFMT", "lmgaCAtWN7erjnTLxn
        
 		function fblogin(){
 		//step2:https://developers.facebook.com/docs/graph-api/using-graph-api/v2.3	
-			Parse.FacebookUtils.logIn(null, {
- success: function(user) {
+			Parse.FacebookUtils.logIn(null, {success: function(user) {
  if (!user.existed()) {
  alert("User signed up and logged in through Facebook!");
  } else {
